@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekantik Compounding Strategy | Educational Trading Framework - $199/Month</title>
+    <meta name="description" content="Educational trading framework for sophisticated investors. Theoretical model showing how buffer locks and risk management could grow $10K to $500K. $199/month via Discord. FOR EDUCATIONAL PURPOSES ONLY.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-acronym">ECA</span>
+                <span class="brand-separator">|</span>
+                <span class="brand-name">Ekantik Capital Advisors</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#what">What</a></li>
+                <li><a href="#how">How</a></li>
+                <li><a href="#sure">Are You Sure?</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#call" class="btn-cta">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Educational Purposes Banner -->
+    <div class="educational-banner">
+        <div class="container">
+            <i class="fas fa-info-circle"></i>
+            <span><strong>EDUCATIONAL PURPOSES ONLY:</strong> This content is for educational and informational purposes only. Not financial advice. All models are theoretical. Consult a qualified advisor before investing.</span>
+        </div>
+    </div>
+
+    <!-- WHAT: Hero Section - What is it? -->
+    <section id="what" class="hero">
+        <div class="container">
+            <div class="whac-label">WHAT</div>
+            <h1 class="hero-title">
+                Ekantik <span class="gradient-text">Compounding Strategy</span>
+            </h1>
+            <p class="hero-subtitle">An <strong>educational framework</strong> showing the <span class="highlight">theoretical potential</span> to grow <span class="highlight">$10K</span> to <span class="highlight">$500K</span> in 6 Years</p>
+            
+            <div class="what-intro">
+                <p class="intro-text">The Ekantik Compounding Strategy is a disciplined, tiered risk-scaling methodology designed for sophisticated investors seeking <strong>asymmetric risk/reward opportunities</strong>. Using episodic pivot trading combined with buffer lock protection, this strategy systematically scales capital through 7 risk tiers over 24 quarters.</p>
+                <div class="risk-notice">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p><strong>Important - Educational Purposes Only:</strong> This content is provided for <strong>educational and informational purposes only</strong> and does not constitute financial advice, investment advice, trading advice, or any other advice. This is a <strong>theoretical model</strong> based on system edge and disciplined execution. While the methodology is sound, achieving the full $500K target is aspirational until proven through live trading. <strong>Worst-case scenario: Buffer locks are designed to limit losses, but investors must accept the possibility of losing up to $5K (50% of capital) under extreme conditions.</strong> This is a high-risk, high-reward approach suitable only for those comfortable with this maximum downside. You alone are responsible for evaluating your own financial situation and making your own investment decisions.</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="compoundingChart"></canvas>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">$10,000</div>
+                    <div class="stat-label">STARTING CAPITAL</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">QUARTERS</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">1-2%</div>
+                    <div class="stat-label">DAILY RISK</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$490K</div>
+                    <div class="stat-label">THEORETICAL TARGET</div>
+                </div>
+            </div>
+
+            <div class="hero-features">
+                <span class="feature-badge"><i class="fas fa-balance-scale"></i> Asymmetric Risk/Reward</span>
+                <span class="feature-badge"><i class="fas fa-shield-alt"></i> Disciplined Risk Management</span>
+                <span class="feature-badge"><i class="fas fa-chart-line"></i> Systematic Scaling</span>
+            </div>
+            
+            <div class="asymmetric-callout">
+                <div class="callout-icon"><i class="fas fa-chart-bar"></i></div>
+                <div class="callout-content">
+                    <h3>Asymmetric Opportunity</h3>
+                    <p>Maximum downside: ~$5K (buffer locks designed to prevent worse) vs. potential $490K upside = <strong>98:1 risk/reward ratio</strong></p>
+                    <p class="callout-note">This strategy is designed for investors who understand that <strong>extraordinary returns require accepting extraordinary risk</strong>—but with system edge and guardrails to protect capital.</p>
+                </div>
+            </div>
+
+            <!-- Types of Trades - Part of WHAT -->
+            <div class="what-trades-section">
+                <h2 class="section-subtitle-heading">Three Trading Approaches</h2>
+                <p class="section-note">The strategy employs three distinct trading methodologies to capture opportunities across different market conditions:</p>
+
+                <div class="trades-grid">
+                    <div class="trade-card type-a">
+                        <div class="trade-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>A: Stock FT/Bias + Exhaustion</h3>
+                        <p>Following established market trend (FT) or directional bias aligned with exhaustion signals. High conviction setup.</p>
+                        <div class="trade-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Option Expiration:</span>
+                                <span class="spec-value">Weekly / Bi-weekly</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Risk Allocation:</span>
+                                <span class="spec-value">5%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trade-card type-b">
+                        <div class="trade-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>B: Stock Episodic Pivot</h3>
+                        <p>Individual stock trades based on "Reality Change." Capturing explosive moves triggered by fundamental shifts.</p>
+                        <div class="trade-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Option Expiration:</span>
+                                <span class="spec-value">Weekly</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Risk Allocation:</span>
+                                <span class="spec-value">3% - 5%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trade-card type-c">
+                        <div class="trade-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>C: Intraday Market Moves</h3>
+                        <p>Short-duration SPX/SPY trades capitalizing on intraday volatility. Precision timing for quick alpha capture.</p>
+                        <div class="trade-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Option Expiration:</span>
+                                <span class="spec-value">SPX/SPY 0DTE or Two Day</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Risk Allocation:</span>
+                                <span class="spec-value">2% - 3%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW: How does it work? -->
+    <section id="how" class="how-section">
+        <div class="container">
+            <div class="whac-label">HOW</div>
+            <h2 class="section-title">How It Works: <span class="gradient-text">Tiered Risk Scaling</span></h2>
+            <p class="section-subtitle">The strategy operates through a 7-tier system with buffer locks designed to protect capital while pursuing asymmetric returns</p>
+            
+            <div class="reality-check">
+                <i class="fas fa-lightbulb"></i>
+                <div>
+                    <h4>Reality Check: Theoretical vs. Actual Performance</h4>
+                    <p>This model assumes <strong>consistent profitable execution</strong> across all 24 quarters—a challenging feat even with system edge. Market conditions, execution quality, and psychological factors will impact actual results. <strong>Most attempts will not achieve the full theoretical target.</strong> Focus on the <strong>asymmetric payoff structure</strong>: buffer locks and system edge designed to limit downside (worst case ~$5K), with substantial upside potential if the methodology proves effective.</p>
+                </div>
+            </div>
+
+            <!-- 7 Tiers Breakdown -->
+            <div class="chart-container">
+                <canvas id="tieredChart"></canvas>
+            </div>
+
+            <div class="tiers-overview">
+                <div class="tier-group">
+                    <h3><i class="fas fa-layer-group"></i> The 7-Tier System</h3>
+                    <ul class="tier-list">
+                        <li><span class="tier-badge tier-1">1</span> Tier 1 (Q1-2): $10K base, 2% risk, $2K/quarter</li>
+                        <li><span class="tier-badge tier-2">2</span> Tier 2 (Q3-4): $14K base, 2.5% risk, $3K/quarter</li>
+                        <li><span class="tier-badge tier-3">3</span> Tier 3 (Q5-6): $20K base, 3% risk, $4.5K/quarter</li>
+                        <li><span class="tier-badge tier-4">4</span> Tier 4 (Q7-9): $30K base, 3.5% risk, $7K/quarter</li>
+                        <li><span class="tier-badge tier-5">5</span> Tier 5 (Q10-13): $50K base, 4% risk, $11K/quarter</li>
+                        <li><span class="tier-badge tier-6">6</span> Tier 6 (Q14-17): $80K base, 4.5% risk, $22K/quarter</li>
+                        <li><span class="tier-badge tier-7">7</span> Tier 7 (Q18-24): $180K base, 5% risk, $45K/quarter</li>
+                    </ul>
+                </div>
+
+                <div class="tier-group">
+                    <h3><i class="fas fa-lock"></i> Buffer Lock Mechanism</h3>
+                    <ul class="tier-list">
+                        <li><i class="fas fa-check-circle"></i> Need $4K+ profit buffer above current base to move to next tier</li>
+                        <li><i class="fas fa-check-circle"></i> If drawdown within 2x of base lock, drop back to previous tier</li>
+                        <li><i class="fas fa-check-circle"></i> Base locks protect accumulated capital as you progress</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Risk Management Protocol -->
+            <div class="risk-management-protocol">
+                <h2 class="section-subtitle-heading">Risk Management Protocol</h2>
+                
+                <div class="risk-management-grid">
+                    <div class="management-card">
+                        <div class="card-icon"><i class="fas fa-calendar-day"></i></div>
+                        <h3>Intraday Risk Management</h3>
+                        <p><strong>Daily Risk Cap:</strong> Maximum 2% per day</p>
+                        <ol>
+                            <li>First trade focused on <strong>high probability scalping</strong> to recover risk on the trade</li>
+                            <li>Repeat trade with same risk to cover the full predisposal positioning</li>
+                            <li>On success, <strong>protect profits</strong> on next timeframe high probability setup</li>
+                            <li>On loss, <strong>close the intraday timeframe</strong> — live to fight another day</li>
+                        </ol>
+                    </div>
+
+                    <div class="management-card">
+                        <div class="card-icon"><i class="fas fa-calendar-week"></i></div>
+                        <h3>Weekly Risk Management</h3>
+                        <p><strong>5% Risk per trade</strong> (baseline unit for measuring returns)</p>
+                        <ul>
+                            <li><strong>Two consecutive daily losses</strong> closes the week for introspection</li>
+                            <li>On a profitable <strong>4R cushion</strong>, look out for <strong>>2-3X trades</strong></li>
+                            <li>Review trades weekly to maintain strategy integrity and improve timing</li>
+                            <li>Track R-multiples to ensure strategy maintains edge</li>
+                        </ul>
+                        <p class="note"><i class="fas fa-bolt"></i> <strong>Consistent small wins compound faster than occasional large wins with drawdowns</strong></p>
+                    </div>
+                </div>
+
+                <div class="intentionality-section">
+                    <div class="intentionality-card">
+                        <div class="card-header">
+                            <i class="fas fa-crosshairs"></i>
+                            <h3>Intentionality</h3>
+                        </div>
+                        <ul>
+                            <li>Always focus on making <strong>>2R per campaign</strong></li>
+                            <li>Be aware of lackadaisical attitudes creep</li>
+                            <li>Goal is to shoot for next compounding buffer targets</li>
+                            <li>Remember: <strong>Consistency beats heroics</strong> in the long run</li>
+                        </ul>
+                        <div class="callout">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Discipline equals freedom: Stick to the plan to unlock long-term wealth</p>
+                        </div>
+                    </div>
+
+                    <div class="intentionality-card">
+                        <div class="card-header">
+                            <i class="fas fa-sliders-h"></i>
+                            <h3>Position Sizing & Safety</h3>
+                        </div>
+                        <ul>
+                            <li>Calculate position size: <strong>Account × Risk % × Option Premium</strong></li>
+                            <li>Capitalize on occasional large wins when <strong>In-the-Money delta potential</strong> exists towards end of the trading day</li>
+                            <li>Keep size relative to account — grow positions as account grows</li>
+                            <li>Never exceed 2% risk per trade regardless of conviction</li>
+                            <li><strong>Never average down</strong> on losing Episodic Pivot positions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Quarter-by-Quarter Table -->
+            <div class="detailed-breakdown">
+                <h2 class="section-subtitle-heading">Quarter-by-Quarter Breakdown</h2>
+                <div class="table-wrapper">
+                    <table class="tier-table">
+                        <thead>
+                            <tr>
+                                <th>Quarter</th>
+                                <th>Tier</th>
+                                <th>Portfolio Value</th>
+                                <th>Profit/Quarter</th>
+                                <th>Cumulative Profit</th>
+                                <th>Risk %</th>
+                                <th>Base Lock</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tierTableBody">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARE YOU SURE?: Why This Target Is Achievable -->
+    <section id="sure" class="sure-section">
+        <div class="container">
+            <div class="whac-label">ARE YOU SURE?</div>
+            <h2 class="section-title">Why We Believe <span class="gradient-text">$10K → $500K</span> Is Achievable</h2>
+            <p class="section-subtitle">It sounds astronomical, but it's really just 7 doubles—here's why that matters</p>
+
+            <!-- 7 Doubles Illustration -->
+            <div class="doubles-illustration">
+                <h3 class="doubles-heading">It's Just 7 Doubles: An Illustration of Compounding Power</h3>
+                <p class="doubles-intro"><strong>Important:</strong> "7 doubles" is not a trading methodology—it's an <strong>illustration of how compounding works</strong>. When you hear "$10K to $500K," it sounds impossible. But mathematically, it boils down to just doubling your money 7 times over 24 quarters. This reframes the goal from overwhelming to systematic.</p>
+
+                <div class="doubles-timeline">
+                    <div class="double-step active">
+                        <div class="step-circle">1</div>
+                        <div class="step-content">
+                            <div class="step-label">Start</div>
+                            <div class="step-value">$10K</div>
+                        </div>
+                    </div>
+                    <div class="double-step">
+                        <div class="step-circle">2</div>
+                        <div class="step-content">
+                            <div class="step-label">1st Double</div>
+                            <div class="step-value">$20K</div>
+                            <div class="step-profit">+$10K</div>
+                        </div>
+                    </div>
+                    <div class="double-step">
+                        <div class="step-circle">3</div>
+                        <div class="step-content">
+                            <div class="step-label">2nd Double</div>
+                            <div class="step-value">$40K</div>
+                            <div class="step-profit">+$20K</div>
+                        </div>
+                    </div>
+                    <div class="double-step">
+                        <div class="step-circle">4</div>
+                        <div class="step-content">
+                            <div class="step-label">3rd Double</div>
+                            <div class="step-value">$80K</div>
+                            <div class="step-profit">+$40K</div>
+                        </div>
+                    </div>
+                    <div class="double-step">
+                        <div class="step-circle">5</div>
+                        <div class="step-content">
+                            <div class="step-label">4th Double</div>
+                            <div class="step-value">$160K</div>
+                            <div class="step-profit">+$80K</div>
+                        </div>
+                    </div>
+                    <div class="double-step">
+                        <div class="step-circle">6</div>
+                        <div class="step-content">
+                            <div class="step-label">5th Double</div>
+                            <div class="step-value">$320K</div>
+                            <div class="step-profit">+$160K</div>
+                        </div>
+                    </div>
+                    <div class="double-step">
+                        <div class="step-circle">7</div>
+                        <div class="step-content">
+                            <div class="step-label">6th Double</div>
+                            <div class="step-value">$640K</div>
+                            <div class="step-profit">+$320K</div>
+                        </div>
+                    </div>
+                    <div class="double-step highlight-step">
+                        <div class="step-circle">8</div>
+                        <div class="step-content">
+                            <div class="step-label">7th Double</div>
+                            <div class="step-value">$1.28M</div>
+                            <div class="step-profit">+$640K</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doubles-explanation">
+                    <div class="explanation-card">
+                        <div class="explanation-icon"><i class="fas fa-calculator"></i></div>
+                        <h4>The Math</h4>
+                        <p>$10K doubled 7 times = $1.28M. Our target is $500K—<strong>less than 7 full doubles</strong>. This shows why the goal is mathematically possible, though execution requires discipline and favorable conditions.</p>
+                    </div>
+                    
+                    <div class="explanation-card">
+                        <div class="explanation-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Compounding Accelerates</h4>
+                        <p>Early doubles are small ($10K→$20K), later ones are massive ($640K→$1.28M). <strong>Most gains come in the final tiers</strong>—which is why capital protection with buffer locks is critical.</p>
+                    </div>
+                    
+                    <div class="explanation-card">
+                        <div class="explanation-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Illustration ≠ Strategy</h4>
+                        <p>The actual methodology is our <strong>7-tier system with buffer locks and episodic pivot trades</strong>. "7 doubles" just helps you see why the $500K target is theoretically achievable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tax Impact: What You Actually Keep -->
+            <div class="tax-impact-subsection">
+                <h3 class="subsection-title">Plus: Tax Efficiency Multiplies Your Returns</h3>
+                <p class="subsection-intro">Even if you achieve the target, taxes can take a huge bite. Choose the right account structure to maximize what you actually keep.</p>
+
+                <div class="reality-check">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h4>Tax Benefits Only Matter If You Succeed</h4>
+                        <p>The numbers below assume achieving the theoretical $490K profit. <strong>Focus first on execution; optimize taxes second.</strong> But if you do succeed, your account choice makes a $181K difference.</p>
+                    </div>
+                </div>
+
+            <div class="tax-impact-simple">
+                <h3 class="impact-heading">If You Turn $10K Into $500K, Here's What You Keep:</h3>
+                
+                <div class="outcome-comparison">
+                    <div class="outcome-card worst">
+                        <div class="outcome-rank">Worst</div>
+                        <div class="outcome-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Equity Options<br><span class="account-type">(Regular Taxable Account)</span></h4>
+                        <div class="outcome-amount">$319K</div>
+                        <div class="tax-paid">Pay $181K in taxes (37%)</div>
+                        <div class="outcome-note">Taxed as ordinary income</div>
+                    </div>
+
+                    <div class="outcome-card better">
+                        <div class="outcome-rank">Better</div>
+                        <div class="outcome-icon"><i class="fas fa-file-invoice"></i></div>
+                        <h4>SPX Options<br><span class="account-type">(Section 1256 Account)</span></h4>
+                        <div class="outcome-amount">$369K</div>
+                        <div class="tax-paid">Pay $131K in taxes (27%)</div>
+                        <div class="outcome-note">60/40 blended tax treatment</div>
+                    </div>
+
+                    <div class="outcome-card best">
+                        <div class="outcome-rank">Best</div>
+                        <div class="outcome-icon"><i class="fas fa-piggy-bank"></i></div>
+                        <h4>Roth IRA<br><span class="account-type">(Tax-Free Retirement)</span></h4>
+                        <div class="outcome-amount">$500K</div>
+                        <div class="tax-paid">Pay $0 in taxes (0%)</div>
+                        <div class="outcome-note">100% tax-free forever</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple Chart -->
+            <div class="chart-container" style="max-width: 700px; margin: 3rem auto;">
+                <canvas id="taxComparisonChart"></canvas>
+            </div>
+
+            <!-- Bottom Line Summary -->
+            <div class="tax-bottom-line">
+                <div class="bottom-line-card">
+                    <h3><i class="fas fa-calculator"></i> The Bottom Line</h3>
+                    <div class="bottom-line-grid">
+                        <div class="comparison-row">
+                            <span class="comparison-label">Equity Options:</span>
+                            <span class="comparison-value loss">-$181K in taxes</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">SPX/Section 1256:</span>
+                            <span class="comparison-value better">-$131K in taxes</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Roth IRA:</span>
+                            <span class="comparison-value best">$0 in taxes</span>
+                        </div>
+                        <div class="comparison-row highlight">
+                            <span class="comparison-label"><strong>Roth IRA Advantage:</strong></span>
+                            <span class="comparison-value best"><strong>Keep $181K more</strong></span>
+                        </div>
+                    </div>
+                    <p class="bottom-line-note">Using a Roth IRA means you keep <strong>every dollar</strong> of profit. That's $181K more than a regular taxable account.</p>
+                </div>
+            </div>
+
+            <!-- Roth IRA Basics -->
+            <div class="roth-basics">
+                <h3>Roth IRA Quick Facts</h3>
+                <div class="basics-grid">
+                    <div class="basic-fact">
+                        <div class="fact-icon"><i class="fas fa-coins"></i></div>
+                        <h4>Contribution Limit</h4>
+                        <p>$7,000/year ($8,000 if 50+)<br>Use Backdoor Roth if over income limits</p>
+                    </div>
+                    <div class="basic-fact">
+                        <div class="fact-icon"><i class="fas fa-calendar"></i></div>
+                        <h4>5-Year Rule</h4>
+                        <p>Account must be open 5 years<br>for tax-free withdrawals</p>
+                    </div>
+                    <div class="basic-fact">
+                        <div class="fact-icon"><i class="fas fa-check-circle"></i></div>
+                        <h4>Best For</h4>
+                        <p>High-growth strategies<br>Tax-free compounding forever</p>
+                    </div>
+                    <div class="basic-fact">
+                        <div class="fact-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Important</h4>
+                        <p>Must comply with IRA rules<br>Consult your tax advisor</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- End Tax Impact Subsection -->
+
+            <!-- Key Advantages Summary -->
+            <div class="advantages-summary">
+                <h2 class="section-subtitle-heading">Strategic Advantages (If Successfully Executed)</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-balance-scale"></i></div>
+                        <h4>Asymmetric Risk/Reward</h4>
+                        <p>Worst-case ~$5K loss (buffer locks + system edge designed to prevent worse) vs. $490K upside potential—a 98:1 ratio with protective guardrails</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Capital Protection</h4>
+                        <p>Buffer lock system designed to limit losses by automatically scaling down when portfolio approaches danger zones</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Systematic Framework</h4>
+                        <p>Clear tier progression and rules remove emotional decision-making and provide consistent execution guidelines</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon"><i class="fas fa-coins"></i></div>
+                        <h4>Tax Optimization</h4>
+                        <p>Roth IRA keeps $181K more vs taxable—if you achieve the target, account structure dramatically impacts final outcome</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL: Call-to-Action Section -->
+    <section id="call" class="cta-section">
+        <div class="container">
+            <div class="whac-label">CALL TO ACTION</div>
+            <div class="cta-content">
+                <h2>Are You Prepared for the Worst-Case ($5K Loss) to Capture Asymmetric Upside?</h2>
+                <p>This strategy is designed for sophisticated investors who understand <strong>asymmetric risk/reward opportunities</strong>. While buffer locks and system edge are designed to protect capital, you must be comfortable with worst-case downside (~$5K or 50%) to pursue the $500K target. Execution is challenging and outcomes are uncertain, but the methodology provides guardrails to limit losses while leaving upside potential unlimited.</p>
+                
+                <div class="risk-reward-visual">
+                    <div class="risk-side">
+                        <div class="risk-icon"><i class="fas fa-arrow-down"></i></div>
+                        <h4>Downside Risk</h4>
+                        <p class="risk-value">~$5K</p>
+                        <p class="risk-label">Worst-case loss (buffer locks designed to prevent worse)</p>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="reward-side">
+                        <div class="reward-icon"><i class="fas fa-arrow-up"></i></div>
+                        <h4>Upside Potential</h4>
+                        <p class="reward-value">+$490K</p>
+                        <p class="reward-label">49x target return</p>
+                    </div>
+                </div>
+
+                <div class="cta-philosophy">
+                    <h3>The Asymmetric Mindset</h3>
+                    <p>Extraordinary returns require accepting extraordinary risk. This is <strong>not</strong> a "get rich guaranteed" scheme—it's a <strong>disciplined framework</strong> with system edge and protective guardrails that <em>theoretically</em> could produce exceptional results. While buffer locks are designed to limit losses, you must be comfortable with worst-case ~$5K downside. Most traders will not achieve the full target, but the controlled downside relative to massive upside makes this an asymmetrically attractive opportunity for those who can afford the maximum loss.</p>
+                </div>
+
+                <div class="performance-target">
+                    <div class="target-item">
+                        <span class="target-icon"><i class="fas fa-chart-line"></i></span>
+                        <div>
+                            <h3>98:1</h3>
+                            <p>Risk/Reward<br>Ratio</p>
+                        </div>
+                    </div>
+                    <div class="target-divider">/</div>
+                    <div class="target-item">
+                        <span class="target-icon"><i class="fas fa-brain"></i></span>
+                        <div>
+                            <h3>Aspirational</h3>
+                            <p>Until Proven<br>Through Execution</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="cta-note"><strong>Only proceed if you can afford to lose the capital.</strong> This is speculative trading with asymmetric payoff structure.</p>
+
+                <!-- Can I Do It? Implementation Section -->
+                <div class="implementation-section">
+                    <h3 class="implementation-heading">
+                        <i class="fas fa-question-circle"></i> Can I Do It? How to Replicate Trades
+                    </h3>
+                    <p class="implementation-intro">You don't have to figure this out alone. We provide real-time trade signals and full transparency so you can replicate the strategy alongside experienced traders.</p>
+
+                    <div class="implementation-grid">
+                        <div class="implementation-card">
+                            <div class="implementation-icon"><i class="fas fa-bolt"></i></div>
+                            <h4>Real-Time Trade Signals</h4>
+                            <p>Get instant notifications for all options trades posted in our <strong>private Skool community</strong>. Every entry, exit, stop-loss, and position size is shared in real-time as trades are executed.</p>
+                            <ul class="implementation-list">
+                                <li><i class="fas fa-check-circle"></i> Trade entry alerts with strike, expiry, and position size</li>
+                                <li><i class="fas fa-check-circle"></i> Exit signals (profit targets & stop-losses)</li>
+                                <li><i class="fas fa-check-circle"></i> Tier progression updates and buffer lock adjustments</li>
+                                <li><i class="fas fa-check-circle"></i> Market context and trade rationale</li>
+                            </ul>
+                        </div>
+
+                        <div class="implementation-card">
+                            <div class="implementation-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h4>Historical Performance Access</h4>
+                            <p>Subscribers get access to <strong>past months' performance data</strong> with detailed trade history and key performance indicators (KPIs) to evaluate the strategy's real-world execution.</p>
+                            <ul class="implementation-list">
+                                <li><i class="fas fa-check-circle"></i> Monthly P&L statements with trade-by-trade breakdown</li>
+                                <li><i class="fas fa-check-circle"></i> Win rate, average R-multiple, and risk metrics</li>
+                                <li><i class="fas fa-check-circle"></i> Tier progression history (base locks, buffer levels)</li>
+                                <li><i class="fas fa-check-circle"></i> Drawdown tracking and recovery analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="implementation-card">
+                            <div class="implementation-icon"><i class="fas fa-users"></i></div>
+                            <h4>Community Support</h4>
+                            <p>Join a community of serious traders executing the same strategy. Learn from shared experiences, ask questions, and stay disciplined through the 24-quarter journey.</p>
+                            <ul class="implementation-list">
+                                <li><i class="fas fa-check-circle"></i> Private Skool community with active traders</li>
+                                <li><i class="fas fa-check-circle"></i> Weekly strategy reviews and Q&A sessions</li>
+                                <li><i class="fas fa-check-circle"></i> Execution support and accountability</li>
+                                <li><i class="fas fa-check-circle"></i> Trade journal templates and tracking tools</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="implementation-kpis">
+                        <h4><i class="fas fa-tachometer-alt"></i> Key Performance Indicators You'll Track</h4>
+                        <div class="kpi-grid">
+                            <div class="kpi-item">
+                                <div class="kpi-label">Win Rate</div>
+                                <div class="kpi-description">Percentage of profitable trades vs total trades</div>
+                            </div>
+                            <div class="kpi-item">
+                                <div class="kpi-label">Avg R-Multiple</div>
+                                <div class="kpi-description">Average return relative to risk (target: >2R)</div>
+                            </div>
+                            <div class="kpi-item">
+                                <div class="kpi-label">Max Drawdown</div>
+                                <div class="kpi-description">Largest peak-to-trough decline in account value</div>
+                            </div>
+                            <div class="kpi-item">
+                                <div class="kpi-label">Tier Progression</div>
+                                <div class="kpi-description">Current tier, base lock, and buffer status</div>
+                            </div>
+                            <div class="kpi-item">
+                                <div class="kpi-label">Monthly Profit</div>
+                                <div class="kpi-description">Quarter-to-date and rolling 3-month performance</div>
+                            </div>
+                            <div class="kpi-item">
+                                <div class="kpi-label">Trade Frequency</div>
+                                <div class="kpi-description">Number of trades per week/month by type (A/B/C)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="implementation-callout">
+                        <i class="fas fa-info-circle"></i>
+                        <div>
+                            <h4>Full Transparency, No Guarantees</h4>
+                            <p>We share every trade—winners and losers—with full transparency. You'll see the strategy's real performance, not cherry-picked highlights. <strong>Past performance does not guarantee future results</strong>, but you'll have all the data to make informed decisions about continuing the strategy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Launch Opportunity -->
+                <div class="soft-launch-section">
+                    <div class="launch-badge">
+                        <i class="fas fa-rocket"></i> SOFT LAUNCH OPPORTUNITY
+                    </div>
+                    <h3 class="launch-heading">Join the Founding Cohort & See the Edge in Real-Time</h3>
+                    <p class="launch-intro">We're seeking a <strong>limited group of sophisticated investors</strong> to participate in our <strong>zero-cost validation</strong> soft launch. This is an opportunity to work together on <strong>principles, psychology, and risk management</strong> to ensure you're comfortable executing the strategy properly—before any capital commitment. In the future, this will transition to a subscription model or portfolio-managed model.</p>
+
+                    <div class="launch-grid">
+                        <div class="launch-card proof">
+                            <div class="launch-icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>Prove the Edge First</h4>
+                            <p>See the system in action with <strong>real-time trade alerts</strong> posted as they happen in our private Skool community. No hypothetical backtests—watch live executions with actual entry/exit prices, position sizes, and P&L.</p>
+                            <ul class="launch-features">
+                                <li><i class="fas fa-check-circle"></i> Real-time trade notifications (no delay)</li>
+                                <li><i class="fas fa-check-circle"></i> Weekly performance reports with full transparency</li>
+                                <li><i class="fas fa-check-circle"></i> Live tier progression tracking</li>
+                                <li><i class="fas fa-check-circle"></i> Every trade shared—winners and losers</li>
+                            </ul>
+                        </div>
+
+                        <div class="launch-card pricing">
+                            <div class="launch-icon"><i class="fab fa-discord"></i></div>
+                            <h4>Zero-Cost Validation</h4>
+                            <p>For this <strong>soft launch cohort only</strong>, we're offering <strong>free participation</strong> as we work together to validate the strategy:</p>
+                            <div class="pricing-structure">
+                                <div class="pricing-item single-price">
+                                    <div class="pricing-label">Soft Launch Phase</div>
+                                    <div class="pricing-value">$0</div>
+                                    <div class="pricing-note">Zero cost · Focus on education & validation</div>
+                                </div>
+                            </div>
+                            <div class="pricing-math">
+                                <p><strong>What We'll Work On Together:</strong></p>
+                                <ul class="pricing-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Strategy principles and framework</li>
+                                    <li><i class="fas fa-check-circle"></i> Trading psychology and discipline</li>
+                                    <li><i class="fas fa-check-circle"></i> Risk management execution</li>
+                                    <li><i class="fas fa-check-circle"></i> Real-time trade discussions</li>
+                                    <li><i class="fas fa-check-circle"></i> Ensuring comfort with proper execution</li>
+                                </ul>
+                                <p class="pricing-highlight"><i class="fas fa-info-circle"></i> <strong>Future Transition:</strong> This will become a subscription model or portfolio-managed model after validation phase</p>
+                            </div>
+                            <div class="discord-info">
+                                <a href="https://discord.gg/GTK7xaBH4d" target="_blank" class="discord-link">
+                                    <i class="fab fa-discord"></i> Join Discord Community
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="launch-card limited">
+                            <div class="launch-icon"><i class="fas fa-users"></i></div>
+                            <h4>Why Zero-Cost Soft Launch?</h4>
+                            <p>We're committed to <strong>education and validation first</strong> before any monetization. This cohort will:</p>
+                            <ul class="launch-features">
+                                <li><i class="fas fa-check-circle"></i> Master strategy principles together (no rush)</li>
+                                <li><i class="fas fa-check-circle"></i> Develop proper trading psychology and discipline</li>
+                                <li><i class="fas fa-check-circle"></i> Practice risk management execution in real-time</li>
+                                <li><i class="fas fa-check-circle"></i> Validate system edge through live performance</li>
+                                <li><i class="fas fa-check-circle"></i> Build a community of serious, committed traders</li>
+                            </ul>
+                            <p class="limited-notice"><strong>Limited to first 25 investors</strong> to ensure personalized attention and quality education.</p>
+                        </div>
+                    </div>
+
+                    <div class="launch-timeline">
+                        <h4><i class="fas fa-calendar-alt"></i> What Happens Next?</h4>
+                        <div class="timeline-steps">
+                            <div class="timeline-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>Express Interest</h5>
+                                    <p>Click below to schedule a consultation. We'll assess fit and answer questions.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5>Join Discord Community</h5>
+                                    <p>Subscribe for $199/month to get access to real-time alerts, past performance data, and fellow traders.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>Observe & Validate</h5>
+                                    <p>Watch live trades for 1-2 months. See the edge in action before deploying capital.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5>Execute Alongside Us</h5>
+                                    <p>Replicate trades in your own account. Track progress toward $500K target.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="launch-callout">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Flexible Subscription Model</h4>
+                            <p>The <strong>$199/month subscription</strong> gives you full access to the strategy, real-time signals, and Discord community. <strong>Cancel anytime</strong>—no long-term contracts, no hidden fees. You're in control—subscribe when ready, pause if needed, resume when market conditions align.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="mailto:contact@ekantik.com?subject=Interest%20in%20Soft%20Launch%20-%20Compounding%20Strategy" class="btn-primary">
+                    <i class="fas fa-rocket"></i> Join the Soft Launch Cohort
+                </a>
+
+                <p class="disclaimer-text"><strong>EDUCATIONAL PURPOSES ONLY - Critical Risk Disclosure:</strong> This content is provided for <strong>educational and informational purposes only</strong> and does not constitute financial advice, investment advice, or trading advice. This strategy represents a <strong>theoretical model</strong> being validated through our soft launch program. The $500K target is aspirational and has not been proven through live trading over 24 quarters. Options trading involves substantial risk of loss and is not suitable for all investors. You could lose your entire $10K investment or more. Only invest capital you can afford to lose completely. The soft launch is currently at zero cost during the validation phase. Past hypothetical performance does not guarantee future results. Real-time trade discussions and educational content provide transparency but do not eliminate risk. Consult with a qualified financial advisor before implementing this or any trading strategy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Clear answers to help you make an informed decision</p>
+
+            <div class="faq-grid">
+                <!-- Strategy Questions -->
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-chart-line"></i> About the Strategy</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Is this a proven strategy or theoretical?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>This is a <strong>theoretical model</strong> based on systematic edge and disciplined execution. While the methodology is sound and the framework is disciplined, the $10K to $500K target is <strong>aspirational until proven</strong> through live trading over 24 quarters. <strong>That's why we're doing a soft launch</strong>\u2014to validate the system edge with real-time performance before scaling. You'll see every trade as it happens and weekly performance reports to assess if the edge holds up in live markets.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What makes this "asymmetric"?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Worst-case scenario: ~$5K loss</strong> (50% of capital). The buffer lock system is designed to prevent worse by automatically scaling down when danger thresholds are reached, but extreme conditions could breach this. Your potential upside is <strong>$490K</strong>—a <strong>98:1 risk/reward ratio</strong>. This means your potential gain is 98 times larger than the maximum intended loss. System edge and guardrails work to keep losses well below this worst-case, but you must accept this downside to pursue the upside.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>How long does it take to see results?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The full strategy spans <strong>24 quarters (6 years)</strong>. You'll see progress (or lack thereof) each quarter. The first few tiers (Tiers 1-3) take about 6 quarters and aim to grow $10K to $29K. If you can't successfully execute the early tiers, you'll know within 12-18 months that the strategy isn't working for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What if I don't reach the full $500K?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>That's the <strong>most likely outcome</strong> for most traders. Even reaching Tier 4 or 5 (doubling or tripling your capital) would be a success. The framework is designed to protect capital and scale systematically—any positive progression is valuable. Focus on executing well tier by tier rather than fixating on the final theoretical target.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Questions -->
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-exclamation-triangle"></i> Risk & Capital</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Can I lose more than $10K?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The buffer lock system is <strong>specifically designed to prevent losses beyond ~50% of capital ($5K)</strong> by automatically dropping you to previous tiers when drawdowns approach danger zones. Combined with daily 2% risk caps and system edge, <strong>losses should typically be much smaller</strong>. However, <strong>extreme market events (gap moves, black swan events) or significant execution errors could breach these guardrails</strong>. You must be prepared for worst-case $5K loss, even though the system is built to prevent it. Never invest more than you can afford to lose completely.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Do I need to start with exactly $10K?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No. You can scale the strategy to your capital level. Starting with $5K would target $250K; starting with $20K would target $1M. The tier structure, risk percentages, and buffer locks scale proportionally. However, <strong>smaller accounts may face challenges</strong> with minimum option contract sizes and commission impact.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What's the realistic win rate needed?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The strategy doesn't require an extraordinarily high win rate—approximately <strong>55-60% win rate with proper risk/reward ratios</strong> (targeting 2R+ per trade) can achieve tier progression. The key is <strong>consistency over 24 quarters</strong>, cutting losses quickly, and letting winners run. Even experienced traders find this challenging.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Is this suitable for beginners?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> This strategy requires solid understanding of options trading, technical analysis, risk management, and psychological discipline. You should have at least 1-2 years of profitable trading experience. Beginners should start with paper trading and smaller positions until they develop the necessary skills and emotional control.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Execution Questions -->
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-cogs"></i> Execution & Time</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>How much time does this require daily?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Time commitment is limited to placing and exiting trades. Here's the typical <strong>trade frequency</strong> for each setup as insight:</p>
+                            <ul>
+                                <li><strong>Intraday (0DTE):</strong> 1-2 trades per day</li>
+                                <li><strong>Episodic Pivots:</strong> 0-1 trades per week</li>
+                                <li><strong>FT/Bias trades:</strong> ~5 trades per month</li>
+                            </ul>
+                            <p>Actual time varies based on your execution speed and market conditions. Focus is on quality setups, not constant activity.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Can I automate this strategy?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Currently, this strategy requires <strong>manual execution</strong>. In the future, we will be looking for ways to automate this strategy to reduce time commitment and improve consistency.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What broker do I need?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You need a broker that offers:</p>
+                            <ul>
+                                <li><strong>Options trading</strong> (SPX, SPY, equity options)</li>
+                                <li><strong>Level 3+ options approval</strong> (for spreads if needed)</li>
+                                <li><strong>Low commissions</strong> on options (important for scaling)</li>
+                                <li><strong>Good execution</strong> for 0DTE if using intraday approach</li>
+                            </ul>
+                            <p>Popular choices: TD Ameritrade, Interactive Brokers, tastytrade, or similar platforms.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Do you provide trade alerts or signals?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>This landing page presents the <strong>framework and methodology</strong>. Implementation details, including whether trade signals or alerts are provided, would be discussed during consultation. The strategy requires understanding the <strong>why</strong> behind trades, not just following signals blindly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tax & Account Questions -->
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-university"></i> Tax & Accounts</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Should I use a Roth IRA or taxable account?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Roth IRA is optimal if eligible</strong>—you keep 100% of profits tax-free ($500K vs $319K in taxable). However, Roth IRAs have contribution limits ($7K/year) and rules. If you already have Roth IRA funds or can use conversion strategies, it's the best choice. For larger starting capital or if ineligible, use a taxable account with SPX options for Section 1256 treatment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What's Section 1256 tax treatment?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>SPX (S&P 500 Index) options receive special <strong>60/40 tax treatment</strong>: 60% of gains taxed at long-term rates (max 20%) and 40% at short-term rates (ordinary income). This results in a <strong>blended ~27% tax rate vs 37%</strong> for regular equity options—saving you $50K+ on $490K profit. Trade SPX instead of SPY when possible.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Can I use this in an IRA?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Yes</strong>, but with restrictions. Most IRAs allow basic options strategies (covered calls, cash-secured puts, long calls/puts). Some brokers allow spreads in IRAs. You <strong>cannot</strong> use margin or naked options in IRAs. Verify your specific IRA's options approval level. Traditional and Roth IRAs both work—Roth is superior for tax-free growth.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What about pattern day trader rules?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If trading 0DTE intraday moves, you'll likely trigger <strong>pattern day trader (PDT) rules</strong> requiring $25K minimum account balance. Options: 1) Start with swing trades until you build to $25K, 2) Use a cash account (no PDT rule but settlement delays), or 3) Limit to 3 day trades per 5 days. Plan accordingly based on your starting capital.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Getting Started Questions -->
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-rocket"></i> Getting Started</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What's the first step?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>First, <strong>assess your risk tolerance</strong>. While buffer locks and system edge are designed to limit losses, can you accept worst-case downside of $5K-$10K? If yes, click the "Join the Soft Launch Cohort" button above to express interest. We're seeking a <strong>limited group of 25 founding investors</strong> for our soft launch. We'll discuss your experience level, available capital, time commitment, and whether this strategy aligns with your goals. <strong>Not everyone is a fit</strong>, and that's okay.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What's the pricing for the soft launch?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Zero-Cost Soft Launch (Current Phase):</strong></p>
+                            <p>The soft launch is <strong>completely free</strong>. This is a validation phase where we work together on principles, psychology, and risk management to ensure you're comfortable executing the strategy properly. There's no cost during this phase.</p>
+                            <p><strong>Future Transition:</strong> After the validation phase, this will transition to either a <strong>subscription model</strong> or a <strong>portfolio-managed model</strong>. Founding members from the soft launch will receive priority access and preferential pricing.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Can I try this with a demo account first?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Absolutely—and recommended!</strong> Paper trading lets you test execution without risk. However, understand that <strong>psychology changes with real money</strong>. Demo success doesn't guarantee live success. Use paper trading to master the mechanics, then start with minimal real capital (even $2K-5K) to experience real emotional challenges before scaling up.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What if I fail at Tier 1 or 2?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Then you've learned the strategy doesn't work for you—<strong>at a small cost</strong>. This is actually the system working as designed. You risked $5K to find out if you could turn $10K into $500K. The answer was "no," and you move on. Better to discover this early than after years of struggling. Not every trader succeeds with every strategy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Philosophy Questions -->
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><i class="fas fa-lightbulb"></i> Philosophy & Mindset</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Why emphasize the risk so much?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Because <strong>transparency builds trust</strong> and filters for serious investors. We'd rather have 10 qualified investors who understand risks than 100 who have unrealistic expectations and complain later. If the prominent risk warnings scare you away, <strong>this strategy isn't for you</strong>—and that's perfectly fine. We want investors who embrace asymmetric risk/reward, not those seeking guarantees.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What separates winners from losers?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Three things: <strong>Discipline</strong> (following rules when emotions scream otherwise), <strong>Patience</strong> (waiting for high-probability setups), and <strong>Acceptance</strong> (of losses as part of the process). Winners execute the plan consistently over 24 quarters. Losers chase, revenge trade, over-risk, or quit after early setbacks. Skill matters, but <strong>psychology determines outcomes</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>Is this "too good to be true"?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The <strong>framework is sound</strong>, the math works, and the risk management is solid. But "too good to be true" suggests easy money—this is <strong>not easy</strong>. It requires skill, discipline, emotional control, and favorable conditions over 6 years. Most won't achieve the full target. But for those who can execute consistently, the <strong>asymmetric payoff makes it worth the attempt</strong>. Judge for yourself after consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            <h4>What's your success rate with clients?</h4>
+                        </div>
+                        <div class="faq-answer">
+                            <p>This is a <strong>theoretical model</strong> being presented for evaluation. Historical success rates would be discussed during consultation if applicable. Remember: <strong>past performance (if any) doesn't guarantee future results</strong>. Your success depends on your execution, not others'. Focus on whether the framework makes sense and whether you can commit to disciplined execution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <h3>Still Have Questions?</h3>
+                <p>We're here to help you make an informed decision. Schedule a consultation to discuss your specific situation.</p>
+                <a href="mailto:contact@ekantik.com?subject=FAQ%20-%20Questions%20About%20Compounding%20Strategy" class="btn-secondary">
+                    <i class="fas fa-comments"></i> Ask Your Question
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ECA | Ekantik Capital Advisors</h3>
+                    <p>Strategic Wealth Protection & Growth</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:contact@ekantik.com">Contact</a>
+                    <a href="#what">What</a>
+                    <a href="#how">How</a>
+                    <a href="#sure">Are You Sure?</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ekantik Capital Advisors LLC. All rights reserved.</p>
+                <p class="footer-disclaimer"><strong>EDUCATIONAL PURPOSES ONLY:</strong> This content is for educational and informational purposes only and does not constitute financial, investment, or trading advice. All trading strategies presented are theoretical models. Options trading involves substantial risk of loss. You could lose your entire investment. Past performance does not guarantee future results. Consult a qualified financial advisor before making any investment decisions. For sophisticated investors only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
